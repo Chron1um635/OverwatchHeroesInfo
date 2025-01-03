@@ -7,23 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224A45AB2CE3B76C00CAC233 /* LikedHeroesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A45AA2CE3B76C00CAC233 /* LikedHeroesListPresenter.swift */; };
+		224A45AD2CE3B77A00CAC233 /* LikedHeroesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A45AC2CE3B77A00CAC233 /* LikedHeroesListInteractor.swift */; };
+		224A45AF2CE3B79000CAC233 /* LikedHeroesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A45AE2CE3B79000CAC233 /* LikedHeroesListRouter.swift */; };
+		224A45B12CE3BF9000CAC233 /* LikedHeroListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A45B02CE3BF9000CAC233 /* LikedHeroListConfigurator.swift */; };
+		229956592D27F91D00A42BDE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229956582D27F91D00A42BDE /* DataManager.swift */; };
 		22FA7F472CDCF35A004B1690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F462CDCF35A004B1690 /* AppDelegate.swift */; };
 		22FA7F492CDCF35A004B1690 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F482CDCF35A004B1690 /* SceneDelegate.swift */; };
 		22FA7F4B2CDCF35A004B1690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F4A2CDCF35A004B1690 /* ViewController.swift */; };
 		22FA7F4E2CDCF35A004B1690 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22FA7F4D2CDCF35A004B1690 /* Base */; };
 		22FA7F502CDCF35C004B1690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FA7F4F2CDCF35C004B1690 /* Assets.xcassets */; };
 		22FA7F532CDCF35C004B1690 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22FA7F522CDCF35C004B1690 /* Base */; };
+		22FA7F632CDCF7A9004B1690 /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F622CDCF7A9004B1690 /* HeroesListViewController.swift */; };
+		22FA7F652CDCF7BD004B1690 /* HeroesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F642CDCF7BC004B1690 /* HeroesListPresenter.swift */; };
+		22FA7F672CDCF7CE004B1690 /* HeroesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F662CDCF7CE004B1690 /* HeroesListInteractor.swift */; };
+		22FA7F692CDCF7DF004B1690 /* HeroesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F682CDCF7DF004B1690 /* HeroesListRouter.swift */; };
+		22FA7F6B2CDCF7F1004B1690 /* HeroesListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F6A2CDCF7F1004B1690 /* HeroesListConfigurator.swift */; };
+		22FA7F6D2CDCF805004B1690 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F6C2CDCF805004B1690 /* NetworkManager.swift */; };
+		22FA7F6F2CDCF80F004B1690 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F6E2CDCF80F004B1690 /* StorageManager.swift */; };
+		22FA7F712CDCFAD4004B1690 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F702CDCFAD4004B1690 /* HeroCell.swift */; };
+		22FA7F732CDCFC1B004B1690 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F722CDCFC1B004B1690 /* Hero.swift */; };
+		22FA7F762CDCFF59004B1690 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 22FA7F752CDCFF59004B1690 /* Alamofire */; };
+		22FA7F7B2CDD0380004B1690 /* HeroCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F7A2CDD0380004B1690 /* HeroCellPresenter.swift */; };
+		22FA7F7D2CDD038C004B1690 /* HeroCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F7C2CDD038C004B1690 /* HeroCellInteractor.swift */; };
+		22FA7F832CDD11CC004B1690 /* HeroCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F822CDD11CC004B1690 /* HeroCellConfigurator.swift */; };
+		22FA7F852CDD34FB004B1690 /* HeroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F842CDD34FB004B1690 /* HeroDetailsViewController.swift */; };
+		22FA7F872CDD3512004B1690 /* HeroDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F862CDD3512004B1690 /* HeroDetailsPresenter.swift */; };
+		22FA7F892CDD3529004B1690 /* HeroDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F882CDD3529004B1690 /* HeroDetailsInteractor.swift */; };
+		22FA7F8C2CDD3544004B1690 /* HeroDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F8B2CDD3544004B1690 /* HeroDetailsConfigurator.swift */; };
+		22FA7FA22CE23F2C004B1690 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22FA7FA12CE23F2C004B1690 /* RealmSwift */; };
+		22FA7FA42CE24B76004B1690 /* LikedHeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7FA32CE24B76004B1690 /* LikedHeroesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224A45AA2CE3B76C00CAC233 /* LikedHeroesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedHeroesListPresenter.swift; sourceTree = "<group>"; };
+		224A45AC2CE3B77A00CAC233 /* LikedHeroesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedHeroesListInteractor.swift; sourceTree = "<group>"; };
+		224A45AE2CE3B79000CAC233 /* LikedHeroesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedHeroesListRouter.swift; sourceTree = "<group>"; };
+		224A45B02CE3BF9000CAC233 /* LikedHeroListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedHeroListConfigurator.swift; sourceTree = "<group>"; };
+		229956582D27F91D00A42BDE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		22FA7F432CDCF35A004B1690 /* OverwatchHeroesInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverwatchHeroesInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22FA7F462CDCF35A004B1690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22FA7F482CDCF35A004B1690 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22FA7F462CDCF35A004B1690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		22FA7F482CDCF35A004B1690 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
 		22FA7F4A2CDCF35A004B1690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22FA7F4D2CDCF35A004B1690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		22FA7F4F2CDCF35C004B1690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22FA7F4F2CDCF35C004B1690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OverwatchHeroesInfo/Assets.xcassets; sourceTree = "<group>"; };
 		22FA7F522CDCF35C004B1690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		22FA7F542CDCF35C004B1690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FA7F542CDCF35C004B1690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		22FA7F622CDCF7A9004B1690 /* HeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
+		22FA7F642CDCF7BC004B1690 /* HeroesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListPresenter.swift; sourceTree = "<group>"; };
+		22FA7F662CDCF7CE004B1690 /* HeroesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListInteractor.swift; sourceTree = "<group>"; };
+		22FA7F682CDCF7DF004B1690 /* HeroesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListRouter.swift; sourceTree = "<group>"; };
+		22FA7F6A2CDCF7F1004B1690 /* HeroesListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListConfigurator.swift; sourceTree = "<group>"; };
+		22FA7F6C2CDCF805004B1690 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		22FA7F6E2CDCF80F004B1690 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		22FA7F702CDCFAD4004B1690 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		22FA7F722CDCFC1B004B1690 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		22FA7F7A2CDD0380004B1690 /* HeroCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellPresenter.swift; sourceTree = "<group>"; };
+		22FA7F7C2CDD038C004B1690 /* HeroCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellInteractor.swift; sourceTree = "<group>"; };
+		22FA7F822CDD11CC004B1690 /* HeroCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellConfigurator.swift; sourceTree = "<group>"; };
+		22FA7F842CDD34FB004B1690 /* HeroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewController.swift; sourceTree = "<group>"; };
+		22FA7F862CDD3512004B1690 /* HeroDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsPresenter.swift; sourceTree = "<group>"; };
+		22FA7F882CDD3529004B1690 /* HeroDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsInteractor.swift; sourceTree = "<group>"; };
+		22FA7F8B2CDD3544004B1690 /* HeroDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsConfigurator.swift; sourceTree = "<group>"; };
+		22FA7FA32CE24B76004B1690 /* LikedHeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedHeroesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FA7FA22CE23F2C004B1690 /* RealmSwift in Frameworks */,
+				22FA7F762CDCFF59004B1690 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				22FA7F452CDCF35A004B1690 /* OverwatchHeroesInfo */,
+				22FA7F4F2CDCF35C004B1690 /* Assets.xcassets */,
 				22FA7F442CDCF35A004B1690 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +105,100 @@
 		22FA7F452CDCF35A004B1690 /* OverwatchHeroesInfo */ = {
 			isa = PBXGroup;
 			children = (
-				22FA7F462CDCF35A004B1690 /* AppDelegate.swift */,
-				22FA7F482CDCF35A004B1690 /* SceneDelegate.swift */,
+				22FA7F612CDCF78D004B1690 /* HeroCell */,
+				22FA7F602CDCF757004B1690 /* HeroDetails */,
+				22FA7F5F2CDCF74C004B1690 /* LikedHeroesList */,
+				22FA7F5E2CDCF73D004B1690 /* HeroesList */,
+				22FA7F5D2CDCF734004B1690 /* Services */,
+				22FA7F5C2CDCF72D004B1690 /* Models */,
 				22FA7F4A2CDCF35A004B1690 /* ViewController.swift */,
-				22FA7F4C2CDCF35A004B1690 /* Main.storyboard */,
-				22FA7F4F2CDCF35C004B1690 /* Assets.xcassets */,
-				22FA7F512CDCF35C004B1690 /* LaunchScreen.storyboard */,
-				22FA7F542CDCF35C004B1690 /* Info.plist */,
+				22FA7F792CDD00E5004B1690 /* Storyboards */,
+				22FA7F5B2CDCF6BE004B1690 /* App */,
 			);
 			path = OverwatchHeroesInfo;
+			sourceTree = "<group>";
+		};
+		22FA7F5B2CDCF6BE004B1690 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F482CDCF35A004B1690 /* SceneDelegate.swift */,
+				22FA7F542CDCF35C004B1690 /* Info.plist */,
+				22FA7F462CDCF35A004B1690 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22FA7F5C2CDCF72D004B1690 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F722CDCFC1B004B1690 /* Hero.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22FA7F5D2CDCF734004B1690 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F6C2CDCF805004B1690 /* NetworkManager.swift */,
+				22FA7F6E2CDCF80F004B1690 /* StorageManager.swift */,
+				229956582D27F91D00A42BDE /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22FA7F5E2CDCF73D004B1690 /* HeroesList */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F622CDCF7A9004B1690 /* HeroesListViewController.swift */,
+				22FA7F642CDCF7BC004B1690 /* HeroesListPresenter.swift */,
+				22FA7F662CDCF7CE004B1690 /* HeroesListInteractor.swift */,
+				22FA7F682CDCF7DF004B1690 /* HeroesListRouter.swift */,
+				22FA7F6A2CDCF7F1004B1690 /* HeroesListConfigurator.swift */,
+			);
+			path = HeroesList;
+			sourceTree = "<group>";
+		};
+		22FA7F5F2CDCF74C004B1690 /* LikedHeroesList */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7FA32CE24B76004B1690 /* LikedHeroesListViewController.swift */,
+				224A45AA2CE3B76C00CAC233 /* LikedHeroesListPresenter.swift */,
+				224A45AC2CE3B77A00CAC233 /* LikedHeroesListInteractor.swift */,
+				224A45AE2CE3B79000CAC233 /* LikedHeroesListRouter.swift */,
+				224A45B02CE3BF9000CAC233 /* LikedHeroListConfigurator.swift */,
+			);
+			path = LikedHeroesList;
+			sourceTree = "<group>";
+		};
+		22FA7F602CDCF757004B1690 /* HeroDetails */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F842CDD34FB004B1690 /* HeroDetailsViewController.swift */,
+				22FA7F862CDD3512004B1690 /* HeroDetailsPresenter.swift */,
+				22FA7F882CDD3529004B1690 /* HeroDetailsInteractor.swift */,
+				22FA7F8B2CDD3544004B1690 /* HeroDetailsConfigurator.swift */,
+			);
+			path = HeroDetails;
+			sourceTree = "<group>";
+		};
+		22FA7F612CDCF78D004B1690 /* HeroCell */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F702CDCFAD4004B1690 /* HeroCell.swift */,
+				22FA7F7A2CDD0380004B1690 /* HeroCellPresenter.swift */,
+				22FA7F7C2CDD038C004B1690 /* HeroCellInteractor.swift */,
+				22FA7F822CDD11CC004B1690 /* HeroCellConfigurator.swift */,
+			);
+			path = HeroCell;
+			sourceTree = "<group>";
+		};
+		22FA7F792CDD00E5004B1690 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7F4C2CDCF35A004B1690 /* Main.storyboard */,
+				22FA7F512CDCF35C004B1690 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +217,10 @@
 			dependencies = (
 			);
 			name = OverwatchHeroesInfo;
+			packageProductDependencies = (
+				22FA7F752CDCFF59004B1690 /* Alamofire */,
+				22FA7FA12CE23F2C004B1690 /* RealmSwift */,
+			);
 			productName = OverwatchHeroesInfo;
 			productReference = 22FA7F432CDCF35A004B1690 /* OverwatchHeroesInfo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +249,10 @@
 				Base,
 			);
 			mainGroup = 22FA7F3A2CDCF35A004B1690;
+			packageReferences = (
+				22FA7F742CDCFF59004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				22FA7FA02CE23F2C004B1690 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 22FA7F442CDCF35A004B1690 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +280,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224A45AF2CE3B79000CAC233 /* LikedHeroesListRouter.swift in Sources */,
+				22FA7F6D2CDCF805004B1690 /* NetworkManager.swift in Sources */,
+				22FA7F652CDCF7BD004B1690 /* HeroesListPresenter.swift in Sources */,
 				22FA7F4B2CDCF35A004B1690 /* ViewController.swift in Sources */,
+				22FA7F892CDD3529004B1690 /* HeroDetailsInteractor.swift in Sources */,
+				22FA7FA42CE24B76004B1690 /* LikedHeroesListViewController.swift in Sources */,
+				22FA7F672CDCF7CE004B1690 /* HeroesListInteractor.swift in Sources */,
 				22FA7F472CDCF35A004B1690 /* AppDelegate.swift in Sources */,
+				22FA7F6B2CDCF7F1004B1690 /* HeroesListConfigurator.swift in Sources */,
+				22FA7F7D2CDD038C004B1690 /* HeroCellInteractor.swift in Sources */,
+				22FA7F632CDCF7A9004B1690 /* HeroesListViewController.swift in Sources */,
+				22FA7F6F2CDCF80F004B1690 /* StorageManager.swift in Sources */,
+				224A45AB2CE3B76C00CAC233 /* LikedHeroesListPresenter.swift in Sources */,
+				22FA7F8C2CDD3544004B1690 /* HeroDetailsConfigurator.swift in Sources */,
+				22FA7F712CDCFAD4004B1690 /* HeroCell.swift in Sources */,
+				22FA7F832CDD11CC004B1690 /* HeroCellConfigurator.swift in Sources */,
+				224A45B12CE3BF9000CAC233 /* LikedHeroListConfigurator.swift in Sources */,
+				22FA7F692CDCF7DF004B1690 /* HeroesListRouter.swift in Sources */,
 				22FA7F492CDCF35A004B1690 /* SceneDelegate.swift in Sources */,
+				22FA7F852CDD34FB004B1690 /* HeroDetailsViewController.swift in Sources */,
+				22FA7F7B2CDD0380004B1690 /* HeroCellPresenter.swift in Sources */,
+				229956592D27F91D00A42BDE /* DataManager.swift in Sources */,
+				22FA7F872CDD3512004B1690 /* HeroDetailsPresenter.swift in Sources */,
+				224A45AD2CE3B77A00CAC233 /* LikedHeroesListInteractor.swift in Sources */,
+				22FA7F732CDCFC1B004B1690 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +462,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +471,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Chron1um.OverwatchHeroesInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +494,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +503,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Chron1um.OverwatchHeroesInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +535,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22FA7F742CDCFF59004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		22FA7FA02CE23F2C004B1690 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22FA7F752CDCFF59004B1690 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22FA7F742CDCFF59004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		22FA7FA12CE23F2C004B1690 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22FA7FA02CE23F2C004B1690 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22FA7F3B2CDCF35A004B1690 /* Project object */;
 }
