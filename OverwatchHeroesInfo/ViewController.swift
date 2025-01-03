@@ -7,11 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tabBarController?.viewControllers?.forEach{ viewController in
+            if let heroListVC = viewController as? HeroesListViewController {
+                let heroListConfigurator = HeroesListConfigurator()
+                heroListConfigurator.configure(with: heroListVC)
+            }
+        }
     }
 
 
