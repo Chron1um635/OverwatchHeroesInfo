@@ -7,23 +7,37 @@
 
 import UIKit
 
-class HeroCell: UIViewController {
+protocol HeroCellViewInputProtocol: AnyObject {
+    func displayHeroName(with name: String)
+    func displayHeroImage(with data: Data)
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+protocol HeroCellViewOutputProtocol {
+    init(view: HeroCellViewInputProtocol, presenter: HeroCellPresenterInputProtocol)
+    func showHero(for index: Int)
+}
 
-        // Do any additional setup after loading the view.
+final class HeroCell: UITableViewCell {
+    
+    @IBOutlet private var heroNameLabel: UILabel!
+    
+    @IBOutlet private var heroImageView: UIImageView!
+    
+    var presenter: HeroCellViewOutputProtocol!
+    
+    func updateView(for indexPath: IndexPath) {
+        presenter.showHero(for: indexPath.row)
+    }
+}
+
+// MARK: - HeroCellViewInputProtocol
+extension HeroCell: HeroCellViewInputProtocol {
+    func displayHeroName(with name: String) {
+        heroNameLabel.text = name
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func displayHeroImage(with data: Data) {
+        heroImageView.image = UIImage(data: data)
+        heroImageView.layer.cornerRadius = heroImageView.frame.height / 2
     }
-    */
-
 }
