@@ -228,7 +228,7 @@
                                 <connections>
                                     <outlet property="heroImageView" destination="bix-TC-m4Y" id="BYd-Be-UUX"/>
                                     <outlet property="heroNameLabel" destination="Iu1-oI-2DJ" id="Sgg-er-uOA"/>
-                                    <segue destination="gse-Hd-uyu" kind="show" trigger="accessoryAction" id="jQb-YU-slw"/>
+                                    <segue destination="gse-Hd-uyu" kind="show" identifier="showDetails" trigger="accessoryAction" id="jQb-YU-slw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

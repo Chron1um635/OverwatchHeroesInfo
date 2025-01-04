@@ -15,6 +15,7 @@ struct HeroLikedListDataStore {
 final class LikedHeroesListPresenter: LikedHeroesListViewOutputProtocol {
     
     var interactor: LikedHeroesListInteractorInputProtocol!
+    var router: LikedHeroesListRouter!
     
     var numberOfRows: Int {
         guard let count = dataStore?.likedHeroes.count else { return 0 }
@@ -34,9 +35,10 @@ final class LikedHeroesListPresenter: LikedHeroesListViewOutputProtocol {
         interactor.fetchHeroes()
     }
     
-//    func didTapCell(at indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func didTapCell(at indexPath: IndexPath) {
+        guard let heroKey = dataStore?.likedHeroes[indexPath.row].key else { return }
+        router.openHeroDetailsViewController(with: heroKey)
+    }
 }
 
 // MARK: - LikedHeroesListInteractorOutputProtocol
@@ -56,5 +58,26 @@ extension LikedHeroesListPresenter: HeroCellPresenterInputProtocol {
         dataTableHero.name = hero.name
         dataTableHero.portrait = hero.portrait
         return dataTableHero
+    }
+}
+
+// MARK: - HeroDetailsPresenterInputProtocol
+extension LikedHeroesListPresenter: HeroDetailsPresenterInputProtocol {
+    func getHero(for heroKey: String) -> Hero {
+        guard let hero = dataStore?.likedHeroes.first(where: { hero in
+            hero.key == heroKey
+        }) else { return Hero() }
+        let heroDB = Hero()
+        heroDB.key = hero.key
+        heroDB.name = hero.name
+        heroDB.portrait = hero.portrait
+        heroDB.liked = hero.liked
+        return heroDB
+    }
+    
+    func setStatus(for hero: Hero, with status: Bool) {
+        dataStore?.likedHeroes.first(where: { dataStoreHero in
+            dataStoreHero.key == hero.key
+        })?.liked = status
     }
 }

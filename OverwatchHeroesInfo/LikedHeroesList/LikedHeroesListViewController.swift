@@ -15,7 +15,7 @@ protocol LikedHeroesListViewOutputProtocol {
     var numberOfRows: Int { get }
     init(view: LikedHeroesListViewInputProtocol)
     func viewDidLoad()
-    //func didTapCell(at indexPath: IndexPath)
+    func didTapCell(at indexPath: IndexPath)
 }
 
 final class LikedHeroesListViewController: UITableViewController {
@@ -29,6 +29,21 @@ final class LikedHeroesListViewController: UITableViewController {
         configurator.configure(with: self)
         presenter.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    // MARK: - Navigation
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let detailsVC = segue.destination as? HeroDetailsViewController else { return }
+            
+            guard let heroKey = sender as? String else { return }
+            
+            guard let presenter = presenter as? HeroDetailsPresenterInputProtocol else { return }
+            let detailsConfigurator = HeroDetailsConfigurator()
+            detailsConfigurator.configure(with: detailsVC, and: heroKey, and: presenter)
+        }
 
 }
 
@@ -54,7 +69,7 @@ extension LikedHeroesListViewController {
 extension LikedHeroesListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        //presenter.didTapCell(at: indexPath)
+        presenter.didTapCell(at: indexPath)
     }
 }
 
