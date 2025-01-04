@@ -12,6 +12,8 @@
 		224A45AF2CE3B79000CAC233 /* LikedHeroesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A45AE2CE3B79000CAC233 /* LikedHeroesListRouter.swift */; };
 		224A45B12CE3BF9000CAC233 /* LikedHeroListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A45B02CE3BF9000CAC233 /* LikedHeroListConfigurator.swift */; };
 		229956592D27F91D00A42BDE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229956582D27F91D00A42BDE /* DataManager.swift */; };
+		2299565B2D2811AD00A42BDE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2299565A2D2811AD00A42BDE /* RealmSwift */; };
+		2299565D2D2811BA00A42BDE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2299565C2D2811BA00A42BDE /* Alamofire */; };
 		22FA7F472CDCF35A004B1690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F462CDCF35A004B1690 /* AppDelegate.swift */; };
 		22FA7F492CDCF35A004B1690 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F482CDCF35A004B1690 /* SceneDelegate.swift */; };
 		22FA7F4B2CDCF35A004B1690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F4A2CDCF35A004B1690 /* ViewController.swift */; };
@@ -27,7 +29,6 @@
 		22FA7F6F2CDCF80F004B1690 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F6E2CDCF80F004B1690 /* StorageManager.swift */; };
 		22FA7F712CDCFAD4004B1690 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F702CDCFAD4004B1690 /* HeroCell.swift */; };
 		22FA7F732CDCFC1B004B1690 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F722CDCFC1B004B1690 /* Hero.swift */; };
-		22FA7F762CDCFF59004B1690 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 22FA7F752CDCFF59004B1690 /* Alamofire */; };
 		22FA7F7B2CDD0380004B1690 /* HeroCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F7A2CDD0380004B1690 /* HeroCellPresenter.swift */; };
 		22FA7F7D2CDD038C004B1690 /* HeroCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F7C2CDD038C004B1690 /* HeroCellInteractor.swift */; };
 		22FA7F832CDD11CC004B1690 /* HeroCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F822CDD11CC004B1690 /* HeroCellConfigurator.swift */; };
@@ -35,7 +36,6 @@
 		22FA7F872CDD3512004B1690 /* HeroDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F862CDD3512004B1690 /* HeroDetailsPresenter.swift */; };
 		22FA7F892CDD3529004B1690 /* HeroDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F882CDD3529004B1690 /* HeroDetailsInteractor.swift */; };
 		22FA7F8C2CDD3544004B1690 /* HeroDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7F8B2CDD3544004B1690 /* HeroDetailsConfigurator.swift */; };
-		22FA7FA22CE23F2C004B1690 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22FA7FA12CE23F2C004B1690 /* RealmSwift */; };
 		22FA7FA42CE24B76004B1690 /* LikedHeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7FA32CE24B76004B1690 /* LikedHeroesListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22FA7FA22CE23F2C004B1690 /* RealmSwift in Frameworks */,
-				22FA7F762CDCFF59004B1690 /* Alamofire in Frameworks */,
+				2299565B2D2811AD00A42BDE /* RealmSwift in Frameworks */,
+				2299565D2D2811BA00A42BDE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +218,8 @@
 			);
 			name = OverwatchHeroesInfo;
 			packageProductDependencies = (
-				22FA7F752CDCFF59004B1690 /* Alamofire */,
-				22FA7FA12CE23F2C004B1690 /* RealmSwift */,
+				2299565A2D2811AD00A42BDE /* RealmSwift */,
+				2299565C2D2811BA00A42BDE /* Alamofire */,
 			);
 			productName = OverwatchHeroesInfo;
 			productReference = 22FA7F432CDCF35A004B1690 /* OverwatchHeroesInfo.app */;
@@ -556,15 +556,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		22FA7F752CDCFF59004B1690 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 22FA7F742CDCFF59004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		22FA7FA12CE23F2C004B1690 /* RealmSwift */ = {
+		2299565A2D2811AD00A42BDE /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 22FA7FA02CE23F2C004B1690 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		2299565C2D2811BA00A42BDE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22FA7F742CDCFF59004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
